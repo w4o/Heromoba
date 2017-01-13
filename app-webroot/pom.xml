@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>app-parent</artifactId>
+        <groupId>hero.moba</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../app-parent/</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>app-webroot</artifactId>
+    <packaging>war</packaging>
+    <name>Projects :: APP :: WebRoot</name>
+    <url>http://apache.org</url>
+    <description>APP.WebRoot</description>
+
+    <dependencies>
+        <!--Projects dependency Begin -->
+        <dependency>
+            <groupId>hero.moba</groupId>
+            <artifactId>app-configs</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>hero.moba</groupId>
+            <artifactId>app-dao</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>hero.moba</groupId>
+            <artifactId>app-service-common</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>hero.moba</groupId>
+            <artifactId>app-service-user</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>hero.moba</groupId>
+            <artifactId>app-api-common</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>hero.moba</groupId>
+            <artifactId>app-api-user</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+        <!--Projects dependency Begin -->
+        <!--Javax jstl el Begin -->
+        <dependency>
+            <groupId>javax.servlet.jsp.jstl</groupId>
+            <artifactId>javax.servlet.jsp.jstl-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.el</groupId>
+            <artifactId>javax.el-api</artifactId>
+        </dependency>
+        <!--Javax jstl el End -->
+
+        <!--Javax Servlet3 provided Begin -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>javax.servlet.jsp-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!--Javax Servlet3 provided End -->
+
+        <!--Test scope test Begin -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- spring test -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!--Test scope test End -->
+    </dependencies>
+    <build>
+        <finalName>heromoba</finalName>
+    </build>
+</project>
